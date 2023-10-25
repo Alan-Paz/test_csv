@@ -1,0 +1,42 @@
++----------------+             +---------------------+
+|   FREEZERFARM  |             |  ENTRADA_DE_DADOS    |                                   
++----------------+             +---------------------+
+|  ID (PK)       | 1        N  |  ID (PK)             |
+|  Nome          |------------>|  Mês                 |
+|                |             |  Status              |
++----------------+             |  Local               |
+                               |  Tag                 |
+                               |  Número de Série     |
+                               |  Tipo                |
+                               |  SA                  |
+                               |  Status do Contrato  |
+                               |  Cliente             |
+                               |  Filial              |
+                               |  Base                |
+                               |  Status de Assinatura|
+                               |  Envio Administrativo|
+                               |  ID_FREEZERFARM (FK) |
+                               +---------------------+
+
+
+|    FREEZERFARM    |    ENTIDADE_PRINCIPAL    |
+|-------------------|---------------------------|
+| FREEZERFARM       | ENTIDADE PRINCIPAL QUE GERENCIA |
+
+
+
+|   MES   | STATUS   | LOCAL |     TAG     |   NUM/SERIE   |  TIPO  |   SA   | STAUS_CONTRATO |          CLIENTE          |    FREEZERFARM                                                                                                   |  FILIAL   |  BASE      | STATUS_ASS | ENVIO_ADM |
+|---------|----------|-------|-------------|---------------|--------|--------|----------------|---------------------------|-------------------|----------|--------|------------|------------|
+| OUTUBRO | CONCLUÍDA | UF001 | 4003809     | 1124788001211 | NOVA   | SA-13871| Concluída      | EUROFARMA LABORATORIOS   | JAQUELINE MENDES DA SILVA | Alan Paz | 17/10/2023 15:19 | 23/10/2023 08:00 | 23/10/2023 10:00 | 23/10/2023 10:00 | São Paulo | DAT - SP  | ASSINADO  | EM FILA    |
+| OUTUBRO | CONCLUÍDA | UF003 | 4003822     | 1124789801211 | NOVA   | SA-13935| Concluída      | EUROFARMA LABORATORIOS   | JAQUELINE MENDES DA SILVA | Alan Paz | 19/10/2023 18:04 | 23/10/2023 10:00 | 23/10/2023 12:00 | 23/10/2023 12:00 | São Paulo | DAT - SP  | ASSINADO  | EM FILA    |
+| OUTUBRO | CONCLUÍDA | UF004 | 4003830     | 1124791601220 | NOVA   | SA-13940| Concluída      | EUROFARMA LABORATORIOS   | JAQUELINE MENDES DA SILVA | Alan Paz | 20/10/2023 14:13 | 23/10/2023 13:00 | 23/10/2023 15:00 | 23/10/2023 15:00 | São Paulo | DAT - RJ  | ASSINADO  | EM FILA    |
+| OUTUBRO | CONCLUÍDA | UF006 | 4003819     | 1124789201211 | NOVA   | SA-13941| Concluída      | EUROFARMA LABORATORIOS   | JAQUELINE MENDES DA SILVA | Alan Paz | 20/10/2023 14:20 | 23/10/2023 15:00 | 23/10/2023 17:00 | 23/10/2023 17:00 | São Paulo | DAT - SP  | ASSINADO  | EM FILA    |
+| OUTUBRO | CONCLUÍDA | UF010 | 4003825     | 1124790601211 | NOVA   | SA-13975| Despachado     | EUROFARMA LABORATORIOS   | JAQUELINE MENDES DA SILVA | Alan Paz | 17/10/2023 15:19 | 23/10/2023 08:00 | 23/10/2023 10:00 | 23/10/2023 10:00 | São Paulo | DAT - SP  | ASSINADO  | EM FILA    |
+| OUTUBRO | CONCLUÍDA | UF014 | 4003800     | 1124786001211 | NOVA   | SA-13977| Despachado     | EUROFARMA LABORATORIOS   | JAQUELINE MENDES DA SILVA | Alan Paz | 19/10/2023 18:04 | 23/10/2023 10:00 | 23/10/2023 12:00 | 23/10/2023 12:00 | São Paulo | DAT - SP  | ASSINADO  | EM FILA    |
+| OUTUBRO | CONCLUÍDA | UF015 | 4003815     | 1124788401211 | NOVA   | SA-13979| Despachado     | EUROFARMA LABORATORIOS   | JAQUELINE MENDES DA SILVA | Alan Paz | 20/10/2023 14:13 | 23/10/2023 13:00 | 23/10/2023 15:00 | 23/10/2023 15:00 | São Paulo | DAT - RJ  | ASSINADO  | EM FILA    |
+| OUTUBRO | CONCLUÍDA | UF016 | 4003829     | 1124791401211 | NOVA   | SA-13981| Despachado     | EUROFARMA LABORATORIOS   | JAQUELINE MENDES DA SILVA | Alan Paz | 20/10/2023 14:20 | 23/10/2023 15:00 | 23/10/2023 17:00 | 23/10/2023 17:00 | São Paulo | DAT - SP  | ASSINADO  | EM FILA    |
+| OUTUBRO | EM FILA  | UF020 | 4003807     | 1124787601211 | NOVA   | SA-13983| Despachado     | EUROFARMA LABORATORIOS   | JAQUELINE MENDES DA SILVA | Alan Paz | 17/10/2023 15:19 | 23/10/2023 08:00 | 23/10/2023 10:00 | 23/10/2023 10:00 | São Paulo | DAT - SP  | ASSINADO  | EM FILA    |
+| OUTUBRO | EM FILA  | UF021 | 4003804     | 1124787001211 | NOVA   | SA-13984| Despachado     | EUROFARMA LABORATORIOS   | JAQUELINE MENDES DA SILVA | Alan Paz | 19/10/2023 18:04 | 23/10/2023 10:00 | 23/10/2023 12:00 | 23/10/2023 12:00 | São Paulo | DAT - SP  | ASSINADO  | EM FILA    |
+| OUTUBRO | EM FILA  | UF024 | 4003814     | 1124788201211 | NOVA   | SA-13985| Despachado     | EUROFARMA LABORATORIOS   | JAQUELINE MENDES DA SILVA | Alan Paz | 20/10/2023 14:13 | 23/10/2023 13:00 | 23/10/2023 15:00 | 23/10/2023 15:00 | São Paulo | DAT - RJ  | ASSINADO  | EM FILA    |
+| OUTUBRO | EM FILA  | UF025 | 4003833     | 1125017201220 | NOVA   | SA-13986| Despachado     | EUROFARMA LABORATORIOS   | JAQUELINE MENDES DA SILVA | Alan Paz | 20/10/2023 14:20 | 23/10/2023 15:00 | 23/10/2023 17:00 | 23/10/2023 17:00 | São Paulo | DAT - SP  | ASSINADO  | EM FILA    |
+
